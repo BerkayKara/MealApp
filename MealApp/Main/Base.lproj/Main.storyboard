@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xz4-iQ-bQx">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="MealApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Kty-PW-1oQ">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PrT-6i-T01">
+                                <rect key="frame" x="100" y="251.00000000000003" width="190" height="33.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCk-37-UEQ">
+                                <rect key="frame" x="100" y="314.33333333333331" width="190" height="39"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Categories">
+                                    <fontDescription key="titleFontDescription" name="Palatino-Roman" family="Palatino" pointSize="22"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="categoriesButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cl3-Ai-4QM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MCk-37-UEQ" secondAttribute="trailing" constant="100" id="5Ae-4x-0zQ"/>
+                            <constraint firstItem="Kty-PW-1oQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HVA-Gy-EG3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PrT-6i-T01" secondAttribute="trailing" constant="100" id="IRb-LK-DEZ"/>
+                            <constraint firstItem="MCk-37-UEQ" firstAttribute="top" secondItem="PrT-6i-T01" secondAttribute="bottom" constant="30" id="NRk-dy-ecW"/>
+                            <constraint firstAttribute="bottom" secondItem="Kty-PW-1oQ" secondAttribute="bottom" id="PeV-mT-Ol8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="MCk-37-UEQ" secondAttribute="bottom" constant="10" id="Pjj-Eo-nMi"/>
+                            <constraint firstItem="PrT-6i-T01" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="V5b-Yy-TpL"/>
+                            <constraint firstAttribute="trailing" secondItem="Kty-PW-1oQ" secondAttribute="trailing" id="VFP-zb-Mx5"/>
+                            <constraint firstItem="Kty-PW-1oQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="f7d-Tc-IyX"/>
+                            <constraint firstItem="PrT-6i-T01" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="160" id="hfe-YC-i7x"/>
+                            <constraint firstItem="MCk-37-UEQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="iMZ-FC-Zwk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Yza-wF-p9C"/>
+                    <connections>
+                        <outlet property="categoriesButton" destination="MCk-37-UEQ" id="qc9-HZ-69B"/>
+                        <outlet property="mainTitle" destination="PrT-6i-T01" id="kaw-i5-kbl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1058.4615384615383" y="-2.1327014218009479"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="96c-IX-5iK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xz4-iQ-bQx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KA2-cB-29X">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="WIG-BM-E1A"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xYM-Xc-fe9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129.23076923076923" y="-2.1327014218009479"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mainBackground" width="2651" height="3840"/>
+    </resources>
+</document>

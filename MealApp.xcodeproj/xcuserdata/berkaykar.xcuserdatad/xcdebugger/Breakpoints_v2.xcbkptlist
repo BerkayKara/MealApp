@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "956898BC-F1EA-4610-B17C-8BF3DF2FAF53"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "87302828-9E99-4806-A5C9-6A0580D14041"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MealApp/Extensions/UIViewExtensions.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "load(url:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5DB92451-BC9B-420F-A297-66DAB9CE6662"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MealApp/Category/Cell/CategoryTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "configView(image:title:description:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5DB92451-BC9B-420F-A297-66DAB9CE6662 - 2bc839343befc1a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MealApp.CategoryTableViewCell.configView(image: Swift.String, title: Swift.String, description: Swift.String) -&gt; ()"
+                  moduleName = "MealApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/berkaykar/Desktop/MealApp/MealApp/Category/Cell/CategoryTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "772">
+               </Location>
+               <Location
+                  uuid = "5DB92451-BC9B-420F-A297-66DAB9CE6662 - 2bc839343befc1a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MealApp.CategoryTableViewCell.configView(image: Swift.String, title: Swift.String, description: Swift.String) -&gt; ()"
+                  moduleName = "MealApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/berkaykar/Desktop/MealApp/MealApp/Category/Cell/CategoryTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "1064">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
